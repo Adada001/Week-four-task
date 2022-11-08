@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <div class = "container">
+        <h1>This list contains all my Artiste </h1>
+
+        <div class="artiste_list">
+            {% for artiste in Artiste %}
+                <div class="artiste">
+                    <a href="">{{artiste.first_name}}</a> 
+                </div>
+            {% endfor %}
+        
+        </div>
+    </div>
+{% endblock content %}

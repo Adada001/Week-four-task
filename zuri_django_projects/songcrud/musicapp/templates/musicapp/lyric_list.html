@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <div class = "container">
+        <h1>This list contains all my Lyric </h1>
+
+        <div class="lyric_list">
+            {% for lyric in Lyric %}
+                <div class="lyric">
+                    <a href="">{{lyric.content}}</a> 
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <div class = "container">
+        <h1>This list contains all my Songs </h1>
+
+        <div class="song_list">
+            {% for song in Song %}
+                <div class="song">
+                    <a href="">{{song.title}}</a> 
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}

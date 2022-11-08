@@ -1,5 +1,7 @@
 from email.policy import default
 from django.db import models
+from django.conf import settings
+
 from unittest.util import _MAX_LENGTH
 from datetime import datetime
 
@@ -26,3 +28,4 @@ class Lyric(models.Model):
 
     def __str__(self):
         return self.content
+
